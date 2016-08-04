@@ -3,7 +3,9 @@ body {
   background: linear-gradient(to left, #8e9eab , #eef2f3);
 }
 
-
+.beauty{
+    background-color: dimgray
+}
 @keyframes wave {
   0%   { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -20,7 +22,7 @@ body {
 }
 
 .image {
-  background: url('http://goo.gl/Ztc4c1') no-repeat 75%;
+  background: url("beaty.jpeg") no-repeat 75%;
   background-size: cover;  
   position: absolute;
   z-index: 1;
@@ -87,3 +89,18 @@ body {
   text-transform: uppercase;
   font-family: 'Reem Kufi', sans-serif;
 }
+.loader{transform:translate(-50%,-100%);-webkit-transform:translate(-50%,-100%);position:absolute;left:50%;top:50%;min-width:250px;}
+.loader i{height:20px;width:20px;background:#E6A18A;display:inline-block;border-radius:150px;margin-right:5px;-webkit-animation:loading 3s infinite;animation:loading 3s infinite;box-shadow:0px 0px 15px orange;-webkit-transform:translate(0,50%);transform:translate(0,50%)}
+
+.loader i:nth-child(1){animation-delay:-0.5s;-webkit-animation-delay:-0.5s}
+.loader i:nth-child(2){animation-delay:-1s;-webkit-animation-delay:-1s}
+.loader i:nth-child(3){animation-delay:-1.5s;-webkit-animation-delay:-1.5s}
+.loader i:nth-child(4){animation-delay:-2s;-webkit-animation-delay:-2s}
+.loader i:nth-child(5){animation-delay:-2.5s;-webkit-animation-delay:-2.5s}
+.loader i:nth-child(6){animation-delay:-3s;-webkit-animation-delay:-3s}
+.loader i:nth-child(7){animation-delay:-3.5s;-webkit-animation-delay:-3.5s}
+.loader i:nth-child(8){animation-delay:-4s;-webkit-animation-delay:-4s}
+.loader i:nth-child(9){animation-delay:-4.5s;-webkit-animation-delay:-4.5s}
+
+@keyframes loading{50%{height:100px}}
+@-webkit-keyframes loading{50%{height:100px}}
